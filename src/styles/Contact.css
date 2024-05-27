@@ -1,0 +1,92 @@
+/* Contact.css */
+#contact {
+  padding: 100px 0; /* Add padding around the section */
+  background-color: #f5f5f5; /* Light background color */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px; /* Limit container width */
+  margin: 0 auto; /* Center container horizontally */
+}
+
+.contact-info {
+  width: 45%;
+  padding: 30px;
+  background-color: #fff; /* White background for contact info */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.contact-info h3 {
+  color: #333; /* Darker heading color */
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  width: 50%;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: bold; /* Make labels bold */
+}
+
+.form-control {
+  border-radius: 5px; /* Slightly rounded corners for inputs */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border-color: #007bff;
+  padding: 10px 20px; /* Increase button padding */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%; /* Make columns full-width */
+  }
+}
+
+/* Title Styling */
+.title-container {
+  text-align: center; /* Center the title text */
+  margin-bottom: 40px; /* Add space below the title */
+}
+
+.title {
+  font-size: 2.5rem; /* Large font size */
+  font-weight: 700; /* Bold weight */
+  color: #333; /* Darker text color */
+  margin-bottom: 10px; /* Space for subtitle/description */
+}
+
+.subtitle {
+  /* Optional: For a smaller subtitle/description */
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.5; /* Adjust for better readability */
+}
+
+/* Responsive Design: Adjust font size for smaller screens */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem; /* Smaller font size on smaller screens */
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+}

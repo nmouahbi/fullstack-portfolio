@@ -1,0 +1,32 @@
+/* projects.css */
+
+#projects .card {
+  border: none; /* Remove default border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a nice shadow */
+  transition: transform 0.2s ease; /* Add a subtle hover transition */
+}
+
+#projects .card:hover {
+  transform: translateY(-2px); /* Lift card on hover */
+}
+
+/* Spacing between cards */
+#projects .col-md-6 {
+  margin-bottom: 2rem; /* Adjust spacing as needed */
+}
+
+/* More readable description text */
+#projects .card-text {
+  text-align: left;
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+/* Style the "Read More" button */
+#projects .card-body .btn-link {
+  color: #007bff; /* Bootstrap's primary color */
+  text-decoration: none;
+}
+
+#projects .card-body .btn-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,75 @@
+.testimonial-list {
+  text-align: center;
+  padding: 2rem 1rem;
+  padding-top: 10%;
+}
+
+.testimonial-list {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  padding-bottom: 5%;
+  background: linear-gradient(
+    to right,
+    white,
+    beige 50%,
+    white
+  ); /* Left to right */
+  background: linear-gradient(
+    to left,
+    white,
+    beige 50%,
+    white
+  ); /* Right to left */
+  /* Fallback for browsers that don't support gradients */
+  background-color: beige;
+  padding-top: 5%;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.card {
+  background-color: #f8f9fa;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.blockquote-footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.contact-container {
+  padding-left: 2%;
+}
+
+.contact-form {
+  width: 100%;
+}

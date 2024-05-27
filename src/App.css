@@ -1,3 +1,27 @@
+/* Sticky footer styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-flex {
+  flex: 1;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +50,96 @@
 
 .App-link {
   color: #61dafb;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 0;
+  list-style: none;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #c5c5c5;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  padding: 20px 0;
+  position: relative;
+}
+
+.timeline-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  border: 2px solid #c5c5c5;
+  margin-left: -10px;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  left: 55%;
+}
+
+.timeline-item:nth-child(odd) .timeline-content:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
+
+.timeline-item:nth-child(even) .timeline-content:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+
+/* Progress Bar Styles */
+.progress {
+  height: 25px;
+}
+
+.progress-bar {
+  line-height: 25px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
 }
 
 @keyframes App-logo-spin {
